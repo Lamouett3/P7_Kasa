@@ -15,4 +15,4 @@ const CardsSection = () => {
   );
 };
 
-export default CardsSection;
+export default CardsSection
