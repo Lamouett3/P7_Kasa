@@ -2,7 +2,7 @@
 import Header from './components/Header/Header';
 import Banner from './components/Banner/Banner';
 import CardsSection from './components/Cards/card';
-import './App.css';
+//import './App.css'; // css pour animation logo react
 
 function App() {
   return ( 
