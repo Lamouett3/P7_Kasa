@@ -1,0 +1,22 @@
+.footer {
+    background-color: black;
+    margin-top: 5%;
+    height: 100px;
+    /* Ajuster selon vos besoins */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer img {
+    max-height: 80%;
+    /* Ajuster selon vos besoins */
+}
+
+p {
+    font-size: 0.8rem;
+    text-align: center;
+    margin: auto;
+    color: white;
+
+}
