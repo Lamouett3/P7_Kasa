@@ -16,7 +16,6 @@ function CardsSection() {
         <div className="card" key={card.id}>
           <img src={card.cover} alt={card.title} />
           <h2>{card.title}</h2>
-          <p>{card.description}</p>
         </div>
       ))}
     </div>
