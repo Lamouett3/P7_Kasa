@@ -1,6 +1,7 @@
 //import logo from './logo.svg';
 import Header from './components/Header/Header';
 import Banner from './components/Banner/Banner';
+import CardsSection from './components/Cards/card';
 import './App.css';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div>
   <Header />
   <Banner />
+  <CardsSection />
     </div>
   );
 }
