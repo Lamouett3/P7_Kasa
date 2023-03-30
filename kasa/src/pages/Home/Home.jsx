@@ -6,10 +6,14 @@ import CardsSection from '../../components/Cards/card';
 
 function Home() {
   return ( 
-    <div>
-  <Banner />
-  <CardsSection />
-    </div>
+    <main>
+      <figure>
+        <Banner />
+      </figure>
+      <section>
+        <CardsSection />
+      </section>
+    </main>
   );
 }
 
