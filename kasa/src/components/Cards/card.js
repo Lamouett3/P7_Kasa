@@ -14,7 +14,7 @@ function CardsSection() {
   return (
     <div className="cards-section">
       {data.map(card => (
-        <Link key={card.id} to={`/ficheLogement/${card.id}`}>
+        <Link key={card.id} to={`/logement/${card.id}`}>
           <div className="card" key={card.id}>
             <img src={card.cover} alt={card.title} />
             <h2>{card.title}</h2>

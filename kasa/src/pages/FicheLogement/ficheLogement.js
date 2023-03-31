@@ -27,4 +27,4 @@ function FicheLogement() {
   );
 }
 
-export default FicheLogement;
+export default FicheLogement
