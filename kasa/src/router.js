@@ -13,7 +13,7 @@ const router = createBrowserRouter([
       {
         element: <FicheLogement />,
         path:"/logement/:id",
-        // loader: logementsData.id,
+        params: { id: ':id' },
       },
       { path: "*", element: <Error /> },
     ],
