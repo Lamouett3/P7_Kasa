@@ -1,6 +1,7 @@
 .dropdown {
     position: relative;
-    width: 55%;
+    width: 80%;
+    left: 41%;
 }
 
 .dropdown__button {
