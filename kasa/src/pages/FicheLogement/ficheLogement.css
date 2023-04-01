@@ -5,22 +5,23 @@
     padding: 20px;
 }
 
-img {
+.fiche-logement img {
     max-width: 100%;
-    height: auto;
+    height: 415px;
+    width: 80%;
     margin-bottom: 20px;
+    border-radius: 20px;
 }
 
-h1 {
+.fiche-logement h1 {
     font-size: 32px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 10px;
 }
 
-p {
+.fiche-logement p {
     font-size: 20px;
     line-height: 1.5;
-    text-align: justify;
     margin-bottom: 30px;
 }

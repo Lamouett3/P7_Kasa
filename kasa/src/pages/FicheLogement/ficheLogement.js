@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import './ficheLogement.css'
+import Carrousel from "../../components/Carrousel/carrousel";
 
 function FicheLogement() {
   const [logement, setLogement] = useState({});
@@ -15,13 +16,14 @@ function FicheLogement() {
 
   return (
     <div className="fiche-logement">
-      <img src={logement.cover} alt={logement.title} />
+      <Carrousel />
       <h1>{logement.title}</h1>
       <p>{logement.description}</p>
     </div>
   );
 }
 
+//      <img src={logement.cover} alt={logement.title} />
 
 
 
