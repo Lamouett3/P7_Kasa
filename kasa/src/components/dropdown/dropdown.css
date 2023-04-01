@@ -1,11 +1,14 @@
 .dropdown {
     position: relative;
-    width: 585px;
+    width: 55%;
 }
 
 .dropdown__button {
     padding: 10px;
+    padding-right: 35%;
     border: none;
+    color: white;
+    font-size: inherit;
     width: 55%;
     background-color: #ff6060;
     border-radius: 10px;
@@ -14,25 +17,30 @@
 
 .dropdown__content {
     position: absolute;
-    top: 100%;
+    top: 85%;
     left: 0;
-    z-index: 1;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    width: calc(100% - 2px);
-    margin-top: 4px;
+    z-index: -1;
+    background-color: #f7f7f7;
+    width: 55%;
+    box-sizing: border-box;
 }
 
 .dropdown__list {
     list-style: none;
-    display: contents;
     padding: 0;
     margin: 0;
+    display: flex;
+    /* pour mettre les éléments en ligne */
+    flex-direction: column;
+    /* pour mettre les éléments en colonne */
+    align-items: stretch;
+    /* pour étirer les éléments en largeur */
 }
 
 .dropdown__list-item {
     padding: 10px;
     cursor: pointer;
+    color: #ff6060;
 }
 
 .dropdown__list-item:hover {
