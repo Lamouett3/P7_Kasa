@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import Dropdown from '../../components/dropdown/dropdown';
 import './ficheLogement.css'
 
 function FicheLogement() {
@@ -8,6 +9,7 @@ function FicheLogement() {
   return (
     <div className='test'>
       <p>Ca a marché 😘 { id } </p>
+      <Dropdown />
     </div>
   );
 }
