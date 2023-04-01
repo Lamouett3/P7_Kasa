@@ -1,8 +1,35 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
-import Dropdown from '../../components/dropdown/dropdown';
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import './ficheLogement.css'
 
+function FicheLogement() {
+  const [logement, setLogement] = useState({});
+  const { id } = useParams();
+
+  useEffect(() => {
+    fetch('../../logement.json')
+      .then(response => response.json())
+      .then(data => data.find(item => item.id === id))
+      .then(logement => setLogement(logement));
+  }, [id]);
+
+  return (
+    <div className="fiche-logement">
+      <img src={logement.cover} alt={logement.title} />
+      <h1>{logement.title}</h1>
+      <p>{logement.description}</p>
+    </div>
+  );
+}
+
+
+
+
+export default FicheLogement;
+
+
+
+/*
 function FicheLogement() {
   const { id } = useParams();
   
@@ -15,3 +42,20 @@ function FicheLogement() {
 }
 
 export default FicheLogement;
+
+
+
+
+//////////////// CSS
+.test {
+    display: flex;
+    margin: auto;
+    height: 100vh;
+}
+
+.test p {
+    margin: auto;
+    color: #ff6060;
+    font-size: 100px;
+}
+*/
