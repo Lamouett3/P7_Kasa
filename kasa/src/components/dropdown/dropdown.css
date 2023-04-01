@@ -1,59 +1,40 @@
-.Dropdown {
+.dropdown {
     position: relative;
+    width: 585px;
 }
 
-.Dropdown__Button,
-.Dropdown__Description {
-    display: block;
-    width: 100%;
-    text-align: left;
-    color: #fff;
-    background-color: #000;
-    border: none;
+.dropdown__button {
     padding: 10px;
-    font-size: 16px;
-}
-
-.Dropdown__Button {
+    border: none;
+    width: 55%;
+    background-color: #ff6060;
+    border-radius: 10px;
     cursor: pointer;
 }
 
-.Dropdown__Description {
+.dropdown__content {
     position: absolute;
     top: 100%;
     left: 0;
-    right: 0;
+    z-index: 1;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: calc(100% - 2px);
+    margin-top: 4px;
+}
+
+.dropdown__list {
+    list-style: none;
+    display: contents;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown__list-item {
     padding: 10px;
-    background-color: #000;
-    transition: transform 0.3s ease-in-out;
-    transform-origin: top center;
-    transform: scale(0);
+    cursor: pointer;
 }
 
-.Dropdown__Description:before {
-    content: '';
-    position: absolute;
-    top: -10px;
-    left: calc(50% - 10px);
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 10px 10px 10px;
-    border-color: transparent transparent #000 transparent;
-}
-
-.Dropdown__Description:after {
-    content: '';
-    position: absolute;
-    top: -9px;
-    left: calc(50% - 8px);
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 8px 8px 8px;
-    border-color: transparent transparent #fff transparent;
-}
-
-.Dropdown__Description.open {
-    transform: scale(1);
+.dropdown__list-item:hover {
+    background-color: #f2f2f2;
 }
