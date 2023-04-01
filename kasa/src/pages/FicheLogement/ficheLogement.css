@@ -7,14 +7,23 @@
 
 
 .fiche-logement h1 {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: bold;
-    text-align: center;
-    margin-bottom: 10px;
+    margin-right: 30%;
+
+}
+
+.fiche-logement h2 {
+    font-size: 18px;
+    margin-right: 78%;
+    color: #ff6060;
 }
 
 .fiche-logement p {
     font-size: 20px;
     line-height: 1.5;
     margin-bottom: 30px;
+    color: #ff6060;
+    background-color: #f7f7f7;
+    margin-right: 45%;
 }

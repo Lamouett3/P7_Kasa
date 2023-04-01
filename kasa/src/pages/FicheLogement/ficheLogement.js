@@ -18,6 +18,7 @@ function FicheLogement() {
     <div className="fiche-logement">
       <Carrousel />
       <h1>{logement.title}</h1>
+      <h2>{logement.location}</h2>
       <p>{logement.description}</p>
     </div>
   );
