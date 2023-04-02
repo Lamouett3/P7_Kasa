@@ -22,8 +22,8 @@ function FicheLogement() {
       <h1>{logement.title}</h1>
       <h2>{logement.location}</h2>
       <section className="dropdown__section">
-      <Dropdown id={id} label="Equipements" property="equipments" />
       <Dropdown id={id} label="Description" property="description" />
+      <Dropdown id={id} label="Equipements" property="equipments" />
       </section>
     </div>
   );

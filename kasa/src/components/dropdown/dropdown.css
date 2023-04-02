@@ -69,11 +69,21 @@
 }
 
 .dropdown__content {
-    flex: 1;
+    flex: 1 1;
     padding: 10px;
+    margin-top: -2%;
+    border-radius: 10px;
     text-align: justify;
     max-height: 200px;
+    background-color: #F7F7F7;
     overflow-y: scroll;
+}
+
+.dropdown__content p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #ff6060;
+    background-color: #f7f7f7;
 }
 
 .dropdown__label {
