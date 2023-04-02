@@ -74,7 +74,8 @@
     margin-top: -2%;
     border-radius: 10px;
     text-align: justify;
-    max-height: 200px;
+    text-align: justify;
+    height: 249px;
     background-color: #F7F7F7;
     overflow-y: scroll;
 }

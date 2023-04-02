@@ -1,12 +1,15 @@
 .cards-section {
     display: flex;
     flex-wrap: wrap;
+    width: 85%;
+    margin: auto;
     background-color: #f7f7f7;
     margin-top: 3%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
     justify-content: center;
     gap: 2rem;
+    border-radius: 20px;
 }
 
 .card {
