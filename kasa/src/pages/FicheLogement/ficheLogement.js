@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import './ficheLogement.css'
 import Carrousel from "../../components/Carrousel/carrousel";
 import Dropdown from "../../components/dropdown/dropdown";
+//import DropdownDescription from "../../components/DropdownDescription/dropdowndescription";
 
 function FicheLogement() {
   const [logement, setLogement] = useState({});
@@ -20,7 +21,10 @@ function FicheLogement() {
       <Carrousel />
       <h1>{logement.title}</h1>
       <h2>{logement.location}</h2>
-      <Dropdown id={id} />
+      <section className="dropdown__section">
+      <Dropdown id={id} label="Equipements" property="equipments" />
+      <Dropdown id={id} label="Description" property="description" />
+      </section>
     </div>
   );
 }
