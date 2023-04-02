@@ -1,6 +1,6 @@
 .carrousel {
     position: relative;
-    width: 100%;
+    width: 90%;
 }
 
 .carrousel img {
@@ -8,6 +8,7 @@
     margin: auto;
     height: 415px;
     width: 100%;
+    object-fit: cover;
     border-radius: 20px;
 
 }

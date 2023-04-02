@@ -9,10 +9,16 @@
 .fiche-logement h1 {
     font-size: 30px;
     font-weight: bold;
-
+    display: flex;
+    margin-left: 10%;
+    width: 100%;
+    margin-top: 2%;
 }
 
 .fiche-logement h2 {
     font-size: 18px;
     color: #ff6060;
+    display: flex;
+    width: 100%;
+    margin-left: 10%;
 }
