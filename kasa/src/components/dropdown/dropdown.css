@@ -1,22 +1,22 @@
 .dropdown__section {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .dropdown {
     position: relative;
-    width: 80%;
+    width: 50%;
     margin: 1rem;
 }
 
 .dropdown__button {
     padding: 10px;
-    padding-right: 35%;
+    padding-right: 75%;
     border: none;
     color: white;
     font-size: inherit;
     width: 100%;
-    max-width: 300px;
     background-color: #ff6060;
     border-radius: 10px;
     cursor: pointer;
