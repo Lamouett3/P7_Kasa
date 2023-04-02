@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./dropdown.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 function Dropdown({ id, label, property }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,6 +26,9 @@ function Dropdown({ id, label, property }) {
     <div className="dropdown">
       <button className="dropdown__button" onClick={() => setIsOpen(!isOpen)}>
         {label}
+        <span className="dropdown__icon">
+          <FontAwesomeIcon icon={isOpen ? faChevronUp : faChevronDown} />
+        </span>
       </button>
       {isOpen && (
         <div className="dropdown__content">
