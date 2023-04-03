@@ -30,7 +30,7 @@ function Carrousel() {
       <FontAwesomeIcon icon={faChevronLeft} />
       </button>
       <button className="carrousel__button carrousel__button--next" onClick={handleNextClick}>
-      <FontAwesomeIcon icon={faChevronRight} />
+     <FontAwesomeIcon icon={faChevronRight} />
       </button>
     </div>
   );
