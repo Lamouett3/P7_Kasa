@@ -97,3 +97,9 @@
     font-weight: bold;
     margin-right: 1rem;
 }
+
+.error__home {
+    position: absolute;
+    bottom: 15%;
+    right: 40%;
+}
