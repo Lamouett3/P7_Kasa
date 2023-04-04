@@ -15,15 +15,6 @@ function DropdownLarger() {
             <li className="dropdown__list-item">
               <p>Fiabilité</p>
             </li>
-            <li className="dropdown__list-item">
-              <p>Respect</p>
-            </li>
-            <li className="dropdown__list-item">
-              <p>Service</p>
-            </li>
-            <li className="dropdown__list-item">
-              <p>Sécurité</p>
-            </li>
           </ul>
         </div>
       )}
