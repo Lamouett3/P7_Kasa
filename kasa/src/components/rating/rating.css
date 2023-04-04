@@ -1,0 +1,19 @@
+.rating {
+    font-size: 24px;
+    display: flex;
+    margin-left: 65%;
+}
+
+.rating span {
+    color: #ddd;
+    cursor: pointer;
+}
+
+.rating span:hover~span,
+.rating span:hover {
+    color: #FF6060;
+}
+
+.rating .filled {
+    color: #FF6060;
+}
