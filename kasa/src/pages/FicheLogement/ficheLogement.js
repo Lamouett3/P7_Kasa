@@ -4,6 +4,7 @@ import './ficheLogement.css'
 import Carrousel from "../../components/Carrousel/carrousel";
 import Dropdown from "../../components/dropdown/dropdown";
 import Rating from "../../components/rating/rating";
+import Host from "../../components/host/host";
 
 function FicheLogement() {
   const [logement, setLogement] = useState({});
@@ -21,6 +22,7 @@ function FicheLogement() {
       <Carrousel />
       <h1>{logement.title}</h1>
       <h2>{logement.location}</h2>
+      <Host />
       <Rating />
       <section className="dropdown__section">
       <Dropdown id={id} label="Description" property="description" />
