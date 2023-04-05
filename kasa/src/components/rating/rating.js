@@ -12,7 +12,6 @@ function Rating() {
           .then(data => data.find(item => item.id === id))
           .then(data => setRating(data.rating));
       }, [id]);
-      console.log(rating);  
       
   return (
     <div className="rating">

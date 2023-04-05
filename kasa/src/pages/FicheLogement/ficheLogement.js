@@ -22,8 +22,10 @@ function FicheLogement() {
       <Carrousel />
       <h1>{logement.title}</h1>
       <h2>{logement.location}</h2>
+      <div className="profile-section">
       <Host />
       <Rating />
+      </div>
       <section className="dropdown__section">
       <Dropdown id={id} label="Description" property="description" />
       <Dropdown id={id} label="Equipements" property="equipments" />
