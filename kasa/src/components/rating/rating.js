@@ -1,25 +1,19 @@
 import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import './rating.css';
 
-function Rating({ id }) {
-  const [rating, setRating] = useState(0);
-
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        const response = await fetch(`../../logement.json`);
-        const data = await response.json();
-        const item = data.find((item) => item.id === id);
-        const ratingValue = item.rating ? item.rating : 0;
-        setRating(ratingValue);
-      } catch (error) {
-        console.error(error);
-      }
-    }
-
-    fetchData();
-  }, [id]);
-
+function Rating() {
+    const [rating, setRating] = useState(0);
+    const { id } = useParams();
+  
+    useEffect(() => {
+        fetch('../../logement.json')
+          .then(response => response.json())
+          .then(data => data.find(item => item.id === id))
+          .then(data => setRating(data.rating));
+      }, [id]);
+      console.log(rating);  
+      
   return (
     <div className="rating">
       {[...Array(5)].map((_, index) => (
