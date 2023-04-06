@@ -1,6 +1,7 @@
 .rating {
     display: flex;
     margin-left: 80%;
+    font-size: larger;
 }
 
 .filled {
