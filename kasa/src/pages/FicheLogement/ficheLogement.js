@@ -21,11 +21,11 @@ function FicheLogement() {
   return (
     <div className="fiche-logement">
       <Carrousel />
+      <div className="profile-section">
       <h1>{logement.title}</h1>
       <h2>{logement.location}</h2>
-      <div className="profile-section">
-      <Tag />
       <Host />
+      <Tag />
       <Rating />
       </div>
       <section className="dropdown__section">
