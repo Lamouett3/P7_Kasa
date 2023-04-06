@@ -5,6 +5,7 @@ import Carrousel from "../../components/Carrousel/carrousel";
 import Dropdown from "../../components/dropdown/dropdown";
 import Rating from "../../components/rating/rating";
 import Host from "../../components/host/host";
+import Tag from "../../components/Tag/tag";
 
 function FicheLogement() {
   const [logement, setLogement] = useState({});
@@ -23,6 +24,7 @@ function FicheLogement() {
       <h1>{logement.title}</h1>
       <h2>{logement.location}</h2>
       <div className="profile-section">
+      <Tag />
       <Host />
       <Rating />
       </div>
