@@ -5,7 +5,7 @@ function DropdownLarger() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="dropdown droplarge">
+    <div className="dropdown_droplarge">
       <button className="dropdown__button" onClick={() => setIsOpen(!isOpen)}>
         <h4>Fiabilité</h4>
       </button>
