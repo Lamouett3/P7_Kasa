@@ -1,15 +1,12 @@
-import background from '../../assets/images/Banniere.png';
+import background from '../../assets/images/aboutbanner.png';
 import './aboutBanner.css';
 
-function aboutBanner() {
+function AboutBanner() {
   return (
     <div className="banner">
-      <img className ="bannerImg" src={background} alt="Bannière"/>
-      <div className="banner__content">
-        <h2>Chez vous, partout et ailleurs</h2>
-      </div>
+      <img className ="bannerImg" src={background} alt="A Propos Bannière"/>
     </div>
   );
 };
 
-export default aboutBanner;
+export default AboutBanner;

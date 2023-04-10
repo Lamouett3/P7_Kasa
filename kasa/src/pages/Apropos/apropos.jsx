@@ -1,12 +1,12 @@
 import React from 'react';
-import aboutBanner from '../../components/Aboutbanner/aboutBanner';
+import AboutBanner from '../../components/Aboutbanner/aboutBanner';
 import DropdownLarger from '../../components/dropdownLarger/dropdownLarger';
-
+import './apropos.css';
 
 function APropos() {
   return (
     <div className="container">
-      <aboutBanner />
+      <AboutBanner /> 
       <DropdownLarger />
     </div>
   );
