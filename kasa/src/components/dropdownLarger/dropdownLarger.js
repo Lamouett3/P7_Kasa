@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./dropdownLarger.css";
+import aboutData from "./aboutText";
 
 function AboutBanner() {
   const [isOpenFiabilite, setIsOpenFiabilite] = useState(false);
@@ -8,7 +9,7 @@ function AboutBanner() {
   const [isOpenSecurite, setIsOpenSecurite] = useState(false);
 
   return (
-    <div>
+    <div className="container_dropdownLarge">
       <div className="dropdown_droplarge">
         <button
           className="dropdownLarger__button"
@@ -20,7 +21,7 @@ function AboutBanner() {
           <div className="dropdownLarger__content">
             <ul className="dropdownLarger__list">
               <li className="dropdownLarger__list-item">
-                <p>Fiabilité</p>
+                <p>{aboutData.fiability}</p>
               </li>
             </ul>
           </div>
@@ -38,7 +39,7 @@ function AboutBanner() {
           <div className="dropdownLarger__content">
             <ul className="dropdownLarger__list">
               <li className="dropdownLarger__list-item">
-                <p>Respect</p>
+                <p>{aboutData.respect}</p>
               </li>
             </ul>
           </div>
@@ -56,7 +57,7 @@ function AboutBanner() {
           <div className="dropdownLarger__content">
             <ul className="dropdownLarger__list">
               <li className="dropdownLarger__list-item">
-                <p>Service</p>
+                <p>{aboutData.service}</p>
               </li>
             </ul>
           </div>
@@ -74,7 +75,7 @@ function AboutBanner() {
           <div className="dropdownLarger__content">
             <ul className="dropdownLarger__list">
               <li className="dropdownLarger__list-item">
-                <p>Sécurité</p>
+                <p>{aboutData.security}</p>
               </li>
             </ul>
           </div>
