@@ -6,6 +6,7 @@ import Dropdown from "../../components/dropdown/dropdown";
 import Rating from "../../components/rating/rating";
 import Host from "../../components/host/host";
 import Tag from "../../components/Tag/tag";
+import Footer from '../../components/Footer/Footer';
 
 function FicheLogement() {
   const [logement, setLogement] = useState({});
@@ -19,6 +20,7 @@ function FicheLogement() {
   }, [id]);
 
   return (
+    <div>
     <div className="fiche-logement">
       <Carrousel />
       <div className="profile-section">
@@ -32,6 +34,8 @@ function FicheLogement() {
       <Dropdown id={id} label="Description" property="description" />
       <Dropdown id={id} label="Equipements" property="equipments" />
       </section>
+    </div>
+    <Footer />
     </div>
   );
 }
