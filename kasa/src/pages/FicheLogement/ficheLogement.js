@@ -40,41 +40,7 @@ function FicheLogement() {
   );
 }
 
-//      <img src={logement.cover} alt={logement.title} />
-
-
 
 export default FicheLogement;
 
 
-
-/*
-function FicheLogement() {
-  const { id } = useParams();
-  
-  return (
-    <div className='test'>
-      <p>Ca a marché 😘 { id } </p>
-      <Dropdown />
-    </div>
-  );
-}
-
-export default FicheLogement;
-
-
-
-
-//////////////// CSS
-.test {
-    display: flex;
-    margin: auto;
-    height: 100vh;
-}
-
-.test p {
-    margin: auto;
-    color: #ff6060;
-    font-size: 100px;
-}
-*/
