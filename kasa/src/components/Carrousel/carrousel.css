@@ -1,6 +1,7 @@
 .carrousel {
     position: relative;
     width: 100%;
+    margin-bottom: 3%;
 }
 
 .carrousel img {
@@ -9,7 +10,7 @@
     height: 415px;
     width: 100%;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 25px;
 
 }
 
@@ -31,4 +32,32 @@
 
 .carrousel__button--next {
     right: 0;
+}
+
+.carrousel__counter {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.carrousel__counter-current {
+    margin-right: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .carrousel img {
+        height: 255px;
+    }
+
+    .carrousel__counter {
+        display: none;
+    }
 }
